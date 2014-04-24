@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movielist</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <!-- Shell -->
+  <div id="shell">
+    <%= render 'layouts/header' %>
+    <div id="main">
+      <div id="content">
+        <%= yield %>
+      </div>
+      <%#= render 'layouts/news' %>
+      <%#= render 'layouts/coming' %>
+      <div class="cl">&nbsp;</div>
+    </div>
+    <%= render 'layouts/footer' %>
+  </div>
+  <!-- end Shell -->
+</body>
+</html>
